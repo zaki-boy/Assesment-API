@@ -18,16 +18,26 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import groovy.json.JsonSlurper as JsonSlurper
 
-GlobalVariable.title = 'Agung'
+GlobalVariable.name = 'Agung'
+GlobalVariable.email = 'Agung@gmail.com'
+GlobalVariable.body = 'Assesment api'
 
-response1 = WS.sendRequest(findTestObject('Albums/POST - albums'))
+response1 = WS.sendRequest(findTestObject('Comments/POST - comments'))
 
 WS.verifyResponseStatusCode(response1, 201)
-WS.verifyElementPropertyValue(response1, 'title', 'Agung')
+WS.verifyElementPropertyValue(response1, 'name', 'Agung')
+WS.verifyElementPropertyValue(response1, 'email', 'Agung@gmail.com')
+WS.verifyElementPropertyValue(response1, 'body', 'Assesment api')
 
-GlobalVariable.title = 'Muzaki'
+GlobalVariable.name = 'Muzaki'
+GlobalVariable.email = 'Muzaki@gmail.com'
+GlobalVariable.body = 'Assesment api 2'
 
-response2 = WS.sendRequest(findTestObject('Albums/POST - albums'))
+response2 = WS.sendRequest(findTestObject('Comments/POST - comments'))
 
 WS.verifyResponseStatusCode(response2, 201)
-WS.verifyElementPropertyValue(response2, 'title', 'Muzaki')
+WS.verifyElementPropertyValue(response2, 'name', 'Muzaki')
+WS.verifyElementPropertyValue(response2, 'email', 'Muzaki@gmail.com')
+WS.verifyElementPropertyValue(response2, 'body', 'Assesment api 2')
+
+

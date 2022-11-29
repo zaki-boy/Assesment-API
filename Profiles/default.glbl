@@ -17,6 +17,11 @@
    <GlobalVariableEntity>
       <description></description>
       <initValue>''</initValue>
-      <name>id</name>
+      <name>name</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>email</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
