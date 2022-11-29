@@ -44,7 +44,7 @@ WS.verifyResponseStatusCode(response, 200)
 
 WS.verifyElementPropertyValue(response, '[0].albumId', '1')
 WS.verifyElementPropertyValue(response, '[0].id', '1')
-WS.verifyElementPropertyValue(response, '[0].title', 'accusamus beatae ad facilis cum similique qui sun')
+WS.verifyElementPropertyValue(response, '[0].title', 'accusamus beatae ad facilis cum similique qui sunt')
 WS.verifyElementPropertyValue(response, '[0].url', 'https://via.placeholder.com/600/92c952')
 WS.verifyElementPropertyValue(response, '[0].thumbnailUrl', 'https://via.placeholder.com/150/92c952')
 WS.verifyElementPropertyValue(response, '[1].albumId', '1')
